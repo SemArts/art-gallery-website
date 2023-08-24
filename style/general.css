@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@200&display=swap");
+:root {
+  --gold: #d5966c;
+  --black: #151515;
+  --gray: #444444;
+  --white: #fff;
+}
+
+/* ********************************* */
+/* GENERAL */
+/* ***************** */
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: 0;
+  box-sizing: border-box;
+  transition: all ease 0.2s;
+  list-style-type: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture,
+source {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  line-height: 0;
+}
+
+
+.heading-primary {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+.heading-secondary {
+  font-size: 4.375rem;
+  line-height: 4.375rem;
+}
+
+.heading-tertiary {
+  font-size: 3.75rem;
+  line-height: 3.75rem;
+}
+
+.heading-quaternary {
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary,
+.heading-quaternary,
+.btn {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+}
+
+.p-large {
+  font-size: 1.375rem;
+  line-height: 2rem;
+  color: var(--gray);
+}
+
+.p-small {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.container {
+  /* 71.25rem */
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-inline: 0.7813rem;
+  position: relative;
+}
+
+.btn,
+.btn2 {
+  display: flex;
+  background: var(--black);
+  max-width: fit-content;
+  align-items: center;
+  font-family: Big Shoulders Display;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.2273rem;
+  color: var(--white);
+  z-index: -1;
+}
+
+.btn2 {
+position: absolute;
+top: 0;
+left: 0;
+z-index: 999;
+ flex-direction: row-reverse;
+
+}
+
+.btn-link:visited,
+.btn-link:link {
+  padding: 1.5rem 1.5rem;
+  color: var(--white);
+}
+.arrow-right:visited,
+.arrow-right:link,
+.arrow-left:visited,
+.arrow-left:link {
+  padding: 1.5rem 1.25rem;
+  background-color: var(--gold);
+}
+
+.btn:hover,
+.btn:active,
+.btn2:hover,
+.btn2:active {
+  background: var(--gold);
+}
+.btn-link:hover,
+.btn-link:active {
+  background: var(--gold);
+}
+.btn-link:hover ~ .arrow-right,
+.btn-link:hover ~ .arrow-left{
+  background-color: var(--black);
+}
+
+.arrow-right:hover,
+.arrow-right:active,
+.arrow-left:hover,
+.arrow-left:active {
+  background: var(--black);
+}
+
+.icon {
+  padding-right: 1.25rem;
+  fill: #151515;
+  height: 1.25rem;
+}
+.icon:last-child {
+  padding-right: 0;
+}
+.icon:hover {
+  color: var(--gold);
+}
+
+footer {
+  background: var(--black);
+}
+
+.footer-container {
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 1rem;
+}
+.logo {
+  height: 3.625rem;
+}
+.footer-container .p-small {
+  max-width: 31.25rem;
+}
+

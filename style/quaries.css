@@ -1,0 +1,143 @@
+:root {
+  --gold: #d5966c;
+  --black: #151515;
+  --gray: #444444;
+  --white: #fff;
+}
+
+@media (max-width: 59em) {
+  /* GENERAL */
+
+  .container {
+    max-width: 46.875rem;
+  }
+  .heading-primary {
+    font-size: 4.375rem;
+    line-height: 4.0625rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.125rem;
+
+    line-height: 2.8125rem;
+  }
+
+  .p-large {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: var(--gray);
+  }
+
+  .p-small {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+
+  /* HERO */
+  .hero-section {
+    background: url(../assets/tablet/image-hero.jpg) no-repeat;
+    background-size: contain;
+  }
+
+  .hero-content {
+    padding-top: 9.0625rem;
+    background-image: none;
+    flex-direction: column;
+    align-items: last baseline;
+    justify-content: flex-start;
+  }
+
+  .hero-text {
+    margin-right: 0;
+    padding-top: 3rem;
+  }
+  .heading-hero {
+    mix-blend-mode: normal;
+    color: var(--black);
+  }
+  .hero-text .btn {
+    margin-top: 3rem;
+  }
+
+  /* ****************************** */
+  /* FOOTER */
+  /* ****************************** */
+  .footer-container {
+    padding: 3.5rem 1rem;
+  }
+  .logo {
+    height: 2.5rem;
+  }
+  .footer-container .p-small {
+    max-width: 18rem;
+    padding: 0 1rem;
+  }
+
+}
+@media (max-width: 37.5em) {
+
+  /* * */
+  /* HERO */
+  /* * */
+
+  .hero-section {
+    background: none;
+  }
+  .hero-image-mobile {
+    display: block;
+  }
+
+  .hero-content {
+    align-items: start;
+    padding-top: 2rem;
+    height: auto;
+  }
+  .heading-hero{
+    max-width: 100%;
+  }
+  .hero-text{
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  /* * */
+  /* ABOUT */
+  /* * */
+
+  .grid {
+    margin-block: 7.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto; 
+    grid-template-areas:
+      "t1"
+      "t2"
+      "l1"
+      "r1"
+      "r2";
+  }
+  .top-feature-left{
+    padding-right: 1rem;
+    max-width: none;
+  }
+
+  .right-feature-2{
+    padding: 3rem 1.5rem;
+  }
+
+  /* * */
+  /* FOOTER */
+  /* * */
+  .footer-container{
+    flex-direction: column;
+  }
+  .logo{
+    width: 6.8781rem;
+    height: 2.5rem;
+  }
+
+  .footer-container .p-small {
+    max-width: none;
+    padding: 2.375rem 0;
+  }
+
+}

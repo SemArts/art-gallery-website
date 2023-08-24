@@ -1,0 +1,85 @@
+:root {
+    --gold: #d5966c;
+    --black: #151515;
+    --gray: #444444;
+    --white: #fff;
+  }
+  .heading-secondary{
+    color:  var(--white);
+    max-width: 60%;
+  }
+.location{
+    background: #151515;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 6.25rem;
+    padding-bottom: 8rem;
+}
+
+.location-text{
+    color: var(--white);
+}
+.p-large{
+    color: var(--white);
+}
+.Street {
+    color: #D5966C;
+/* Heading (S) */
+font-family: Big Shoulders Display;
+font-size: 2.25rem;
+font-style: normal;
+font-weight: 900;
+line-height: 2.25rem; 
+text-transform: uppercase;
+}
+
+#map{
+    height: 37.5rem;
+   width: 100vw;
+}
+.leaflet-tile-pane {
+    filter: grayscale(100%);
+  }
+address {
+    font-family: Outfit;
+font-size: 0.8594rem;
+font-style: normal;
+font-weight: 300;
+line-height: 1.25rem; 
+padding: 0.9375rem 0 1.25rem 0;
+}
+
+footer{
+    background: var(--gold);
+    
+}
+.footer-container{
+    color: var(--black);
+
+}
+.icon:hover{
+    color: var(--white);
+}
+.leaflet-control-zoom {
+    display: none !important;
+  }
+/** QUARIES **/
+
+@media (max-width: 37.5em) {
+    #map {
+        height: 35.875rem;
+    }
+    .grid{
+        margin-block: 0;
+        grid-template-columns: 1fr;
+        padding-top: 3.125rem;
+        padding-bottom: 3.125rem;
+    }
+    .heading-secondary{
+        max-width: 100%;
+        padding-bottom: 3rem;
+    }
+
+}
